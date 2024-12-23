@@ -29,7 +29,7 @@ https://github.com/4-20ma/ModbusMaster
 
 
 
-```
+```cpp
 //Note: Defaultly there is only MODBUS protocol supported on AEM1000
 // You have to transfer 2 resistors as shown in image in the main page
 
@@ -44,7 +44,7 @@ ModbusMaster node;  // Create Modbus master instance
 
 ## Reading Sensor Values
 
-```
+```cpp
 //The AEM1000 sensors registers are from 0-4 and size max is 4
 
 const char *names[] = { "temp", "hum", "voc", "co2", "pm2.5" };
@@ -72,7 +72,7 @@ Serial.println(values[i]);
 
 ## To Calibrate Co2 (keep sensor in open air outside for 20 minutes and run this)
 
-```
+```cpp
 
 //set co2 calibration to manual
  node.writeSingleRegister(32, 0);
@@ -85,7 +85,7 @@ Serial.println(values[i]);
 ## To Check Sensor Status (If Sensor Working or faulty or unplugged)
 
 
-```
+```cpp
 
 const char *names[] = { "temp", "hum", "voc", "co2", "pm2.5" };
 
