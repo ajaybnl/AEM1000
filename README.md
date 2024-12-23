@@ -37,7 +37,7 @@ https://github.com/4-20ma/ModbusMaster
 SoftwareSerial modbusSerial(D1, D2);  // RX, TX pins
 ModbusMaster node;  // Create Modbus master instance
 
-**Setup:**
+//Setup Code
  modbusSerial.begin(9600);
   node.begin(1, modbusSerial);
 ```
