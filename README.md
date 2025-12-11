@@ -9,15 +9,8 @@ I have used Node-red to upload the sensor data to mysql db from Mqtt.
 ## Info on Board
 The ASAIR AEM1000 is a cheap alternative. The data it provides is calibrated from factory. We can fetch the data by modbus protocol either from Uart or modbus module.
 
-AEM1000 Photos:
-
-![111|249x170](https://us1.discourse-cdn.com/flex016/uploads/nodered/original/3X/6/0/60c60864773dfe5926820a46d868a40571688284.jpeg)
-![222|347x222](https://us1.discourse-cdn.com/flex016/uploads/nodered/original/3X/4/3/431141d71a74258e4088c34f7716c7c1673e025f.jpeg)
-
 **You have to transfer 2 resistors and remove 2 big resistors to use UART**
-
-![333](https://us1.discourse-cdn.com/flex016/uploads/nodered/original/3X/4/d/4d4e4b9eb70580b161822bd481338a8a0a0dddd7.jpeg)
-
+**See Uploaded Photo**
 
 Datasheet: http://www.aosong.com/m/en/products-78.html
 
