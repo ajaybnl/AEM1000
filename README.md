@@ -10,7 +10,8 @@ I have used Node-red to upload the sensor data to mysql db from Mqtt.
 The ASAIR AEM1000 is a cheap alternative. The data it provides is calibrated from factory. We can fetch the data by modbus protocol either from Uart or modbus module.
 
 **You have to transfer 2 resistors and remove 2 big resistors to use UART**
-**See Uploaded Photo**
+
+![Image](https://github.com/ajaybnl/AEM1000/blob/main/AEM1000_Resistor_Change_Guide.jpg?raw=true)
 
 Datasheet: http://www.aosong.com/m/en/products-78.html
 
@@ -69,7 +70,7 @@ Serial.println(values[i]);
 
 //set co2 calibration to manual
  node.writeSingleRegister(32, 0);
-
+//OR
 //set value 405 as co2 value of open area (natural air)
     node.writeSingleRegister(33, 405);
 ```
